@@ -1,0 +1,12 @@
+<div class="modal-header">
+    <h3 class="modal-title" ng-bind="title"></h3>
+</div>
+<div class="modal-body">
+    <decision-tree node="decisionTree" on-result="onDecisionResult(result)" on-clear="onDecisionClear()"></decision-tree>
+    <div class="decision-tree-result"></div>
+</div>
+<div class="modal-footer">
+    <a href="https://anonymous-org.github.io/">
+        <button class="btn btn-primary" id="acceptButton">Done and Return to the Homepage</button>
+    </a>
+</div>

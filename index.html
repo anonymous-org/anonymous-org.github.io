@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<head>
+
+  <meta charset="UTF-8" />
+  <!--  <meta name="viewport" content="width=device-width, initial-scale=1" />-->
+  <meta name="viewport" content="width=1024" />
+  <title>UniFed: All-In-One Federated Learning Platform to Unify Open-Source Frameworks </title>
+  <!-- <link rel="icon" type="image/png" href="./images/new_logo.png"> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css" />
+  <script src="https://kit.fontawesome.com/b939870cfb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.foundation.min.css">
+  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/dataTables.foundation.min.js"></script>
+  <!-- <script type="text/javascript" src="/static/js/jquery.min.js"></script> -->
+
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="https://d3js.org/d3.v4.js"></script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="scripts/jquery.maphilight.js"></script>
+  <script type="text/javascript">$(function() {
+      $('.map').maphilight();
+      $('#wizardlink').mouseover(function(e) {
+          $('#wizard').mouseover();
+      }).mouseout(function(e) {
+          $('#wizard').mouseout();
+      }).click(function(e) { e.preventDefault(); });
+      $('#recuilink').mouseover(function(e) {
+          $('#recui').mouseover();
+      }).mouseout(function(e) {
+          $('#recui').mouseout();
+      }).click(function(e) { e.preventDefault(); });
+      $('#treelink').mouseover(function(e) {
+          $('#tree').mouseover();
+      }).mouseout(function(e) {
+          $('#tree').mouseout();
+      }).click(function(e) { e.preventDefault(); });
+      $('#configlink').mouseover(function(e) {
+          $('#config').mouseover();
+      }).mouseout(function(e) {
+          $('#config').mouseout();
+      }).click(function(e) { e.preventDefault(); });
+  });</script>
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html"
+          >UniFed</a>
+        <button
+          class="navbar-toggler navbar-light"
+          type="button"
+          data-toggle="collapse"
+          data-target="#main-navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navigation">
+          <ul class="navbar-nav">
+            <li>
+              <a class="nav-link" href="https://anonymized-repo.github.io/">Auto-Run</a>
+            </li>
+            <li>
+              <a class="nav-link" href="leaderboard/index.html">UniFed Leaderboard</a>
+            </li>
+            <!-- <li> -->
+              <!-- <a class="nav-link" href="#contribute">Contribute</a> -->
+              <!-- <a class="nav-link" href="javascript:;">Contribute</a> -->
+            <!-- </li> -->
+            <!-- <li>
+              <a class="nav-link text-nowrap" href="javascript:;"
+                >Model Zoo 🚀</a 
+              >
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+  <!-- <hr class="toprule" /> -->
+  <header>
+    <div class="header-block container">
+      <div class="logo">
+        <!-- <img src="./images/new_logo.png" alt="logo" /> -->
+      </div>
+      <div class="title">UniFed</div>
+      <div class="description">
+        All-In-One Federated Learning Platform to Unify Open-Source Frameworks
+      </div>
+    </div>
+  </header>
+  <!-- <hr class="toprule" /> -->
+
+  <div class="container">
+    <section id="introduction">
+      <div class="overview">
+        <p class="doublealign">
+          The goal of <b>UniFed</b> is to systematically evaluate the existing open-source FL frameworks, and therefore make recommendations for proper FL frameworks, algorithms, and configurations automatically based on user requests. 
+          In addition, with 15 evaluation scenarios, we present both qualitative and quantitative evaluation results of 11 popular open-sourced FL frameworks, from the perspectives of functionality, usability, and system performance for comparison. 
+          Please find more details in our paper.
+        </p>
+        <p class="doublealign">
+          Based on our performance, functionality, and usability evaluation and survey, we built a <a id="treelink" href="https://anonymous-org.github.io/leaderboard/index.html">decision tree</a> to help users choose the best FL framework for their scenarios, which can be easily accessed through our <a id="recuilink" href="https://anonymous-org.github.io/select/">FL recommendation framework</a>.
+          We also provide an <a id="wizardlink" href="https://anonymized-repo.github.io/">Auto-Run</a> function to automatically generate preferred FL configurations, allowing users to easily use any integrated FL framework and corresponding settings based on their use case.
+        </p>
+      </div>
+    </section>
+
+
+    <div id="leaderboard" class="container button-list">
+      <div class="heading">
+        <u>
+          System Design
+        </u>
+      </div>
+    </div>
+    <table>
+        <tr>
+            <td >
+              <center>
+                <img src="images/workflow-design.png" style="max-height:500px;max-width: 850px;" class="map" usemap="#simple">
+
+                <map name="simple">
+                    <area id="tree" href="https://anonymous-org.github.io/leaderboard/index.html" coords="12,65,280,236" shape="rect" data-maphilight='{"stroke":false,"fillColor":"ffff00","fillOpacity":0.5}'>
+                    <area id="recui" href="https://anonymous-org.github.io/select/" coords="316,22,430,245" shape="rect" data-maphilight='{"stroke":false,"fillColor":"ffff00","fillOpacity":0.5}'>
+                    <area id="wizard" href="https://anonymized-repo.github.io/" coords="522,22,623,242" shape="rect" data-maphilight='{"stroke":false,"fillColor":"ffff00","fillOpacity":0.5}'>
+                    <area id="config" href="https://anonymous-org.github.io/exp/config.json" coords="674,65,840,236" shape="rect" data-maphilight='{"stroke":false,"fillColor":"ffff00","fillOpacity":0.5}'>
+                </map>
+              </center>
+            </td>
+        </tr>
+        <tr></tr>
+        <tr>
+          <td ><center>Design of the UniFed Platform</center></td>
+        </tr>
+       <tr></tr>
+    </table>
+
+    <p class="doublealign">
+      ① From the functionality and usability survey, we built a <a id="treelink" href="https://anonymous-org.github.io/leaderboard/index.html">decision tree</a> to help users choose the best FL framework for their scenarios. 
+      This can be more easily accessed through our <a id="recuilink" href="https://anonymous-org.github.io/select/">recommendation system</a>. 
+    </p>
+    <p class="doublealign">  
+      ② After finding potential matching frameworks, the user can use the <a id="wizardlink" href="https://anonymized-repo.github.io/">Auto-Run</a> to generate the configuration file for testing scenarios.
+    </p>
+    <p class="doublealign">
+      ③ Given the <a id="configlink" href="https://anonymous-org.github.io/exp/config.json">configuration file</a> as input, UniFed initiates a distributed training task using the user-specified framework and data source.
+    </p>
+    <p class="doublealign">
+      ④ UniFed outputs the trained model, as well as the distributed execution log in a consistent format, which can be directly used for framework comparison. One can further investigate the log by connecting with other data analysis platforms integrated with UniFed.
+    </p>
+
+    <!-- <div id="leaderboard" class="container button-list">
+      <div class="heading">
+        <u>
+          Choose the Best FL Framework for You
+        </u>
+      </div>
+    </div>
+    <br>
+    <div class="text-center">
+      <a href="https://anonymous-org.github.io/select">
+        <button class = "bn29">
+          Go to choose the framework for your scenario!
+        </button>
+      </a>
+
+      <br>
+      <br>
+
+      <a href="https://anonymous-org.github.io/leaderboard/index.html#scenario_1_heading">
+          <button class = "bn29">
+          Comparison of different frameworks
+        </button>
+      </a>
+    </div> -->
+
+    <div id="leaderboard" class="container button-list">
+      <div class="heading">
+        <u>
+          Available Open-source Frameworks
+        </u>
+      </div>
+    </div>
+
+    <table>
+      <tr>
+          <td ><center><img  src="images/FATE_logo.png" style="max-height:60px;"></center></td>
+          <td ><center><img  src="images/fedml_logo.png" style="max-height:60px;"></center></td>
+          <td ><center><img  src="images/paddlefl-logo.png" style="max-height:60px;"></center></td>
+      </tr>
+      <tr></tr>
+      <tr>
+          <td ><center><a class="nav-link" href="https://github.com/FederatedAI/FATE">FATE</a></center></td>
+          <td ><center><a class="nav-link" href="https://github.com/FedML-AI/FedML">FedML</a></center></td>
+          <td ><center><a class="nav-link" href="https://github.com/PaddlePaddle/PaddleFL">PaddleFL</a></center></td>
+      </tr>
+      <tr></tr>
+      <tr>
+        <td ><center><img  src="images/fedlearner-logo.png" style="max-height:60px;"></center></td>
+        <td ><center><img  src="images/tff-logo.png" style="max-height:60px;"></center></td>
+        <td ><center><img  src="images/flower-logo.avif" style="max-height:60px;"></center></td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td ><center><a class="nav-link" href="https://github.com/bytedance/fedlearner">Fedlearner</a></center></td>
+        <td ><center><a class="nav-link" href="https://github.com/tensorflow/federated">TFF</a></center></td>
+        <td ><center><a class="nav-link" href="https://github.com/adap/flower">Flower</a></center></td>
+    </tr>
+    <tr></tr>
+      <tr>
+        <td ><center><img  src="images/FLUTE-logo.png" style="max-height:60px;"></center></td>
+        <td ><center><img  src="images/CrypTen-logo.png" style="max-height:60px;"></center></td>
+        <td ><center><img  src="images/fedtree-logo.png" style="max-height:60px;"></center></td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td ><center><a class="nav-link" href="https://github.com/microsoft/msrflute">FLUTE</a></center></td>
+        <td ><center><a class="nav-link" href="https://github.com/facebookresearch/CrypTen">CrypTen</a></center></td>
+        <td ><center><a class="nav-link" href="https://github.com/Xtra-Computing/FedTree">FedTree</a></center></td>
+    </tr>
+      <tr></tr>
+      <tr>
+        <td ><center><img  src="images/FedScale-logo.png" style="max-height:60px;max-width: 150px"></center></td>
+        <td ><center><img  src="images/FederatedScope-logo.png" style="max-height:60px;"></center></td>
+    </tr>
+    <tr></tr>
+    <tr>
+        <td ><center><a class="nav-link" href="https://fedscale.ai/">FedScale</a></center></td>
+        <td ><center><a class="nav-link" href="https://federatedscope.io/">FederatedScope</a></center></td>
+    </tr>
+    <tr></tr>
+  </table>
+  
+<!-- 
+    <p class="doublealign">
+      More results will be available soon.
+    </p> -->
+  
+  <hr class="bottomrule" />
+
+  <footer>
+    <small>&copy; 2023, UniFed-leaderboard;
+      <a href="https://icons8.com/icon/100413/access">Icons from Icons8</a></small>
+  </footer>
+
+  <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () {
+      myFunction();
+    };
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+  <script>
+    function choice() {
+      var game = document.getElementById("games").value;
+      var cert_method = document.getElementById("cert-methods").value;
+      window.location.href = "#"+game+"_"+cert_method+"_heading";
+    }
+  </script>
+  <script>
+    $("#CartPole-v0_LoAct").load("./CartPole-v0/LoAct.html");
+    $("#CartPole-v0_GRe-mean").load("./CartPole-v0/GRe-mean.html");
+    $("#CartPole-v0_GRe-median").load("./CartPole-v0/GRe-median.html");
+    $("#CartPole-v0_LoRe").load("./CartPole-v0/LoRe.html");
+    $("#PongNoFrameskip-v4_LoAct").load("./PongNoFrameskip-v4/LoAct.html");
+    $("#PongNoFrameskip-v4_GRe-mean").load("./PongNoFrameskip-v4/GRe-mean.html");
+    $("#PongNoFrameskip-v4_GRe-median").load("./PongNoFrameskip-v4/GRe-median.html");
+    $("#PongNoFrameskip-v4_LoRe").load("./PongNoFrameskip-v4/LoRe.html");
+    $("#FreewayNoFrameskip-v4_LoAct").load("./FreewayNoFrameskip-v4/LoAct.html");
+    $("#FreewayNoFrameskip-v4_GRe-mean").load("./FreewayNoFrameskip-v4/GRe-mean.html");
+    $("#FreewayNoFrameskip-v4_GRe-median").load("./FreewayNoFrameskip-v4/GRe-median.html");
+    $("#FreewayNoFrameskip-v4_LoRe").load("./FreewayNoFrameskip-v4/LoRe.html");
+    $("#highway-fast-v0_LoAct").load("./highway-fast-v0/LoAct.html");
+    $("#highway-fast-v0_GRe-mean").load("./highway-fast-v0/GRe-mean.html");
+    $("#highway-fast-v0_GRe-median").load("./highway-fast-v0/GRe-median.html");
+    $("#highway-fast-v0_LoRe").load("./highway-fast-v0/LoRe.html");
+  </script>
+</body>
